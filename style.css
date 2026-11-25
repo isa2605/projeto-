@@ -1,1 +1,317 @@
+/* Configurações Gerais */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #e9ecef; /* Fundo acinzentado */
+  color: #24292f;
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+/* Cabeçalho Estilo GitHub */
+.gh-header {
+  background-color: #f6f8fa;
+  border-bottom: 1px solid #d0d7de;
+  padding-top: 16px;
+}
+
+.gh-header-content {
+  max-width: 1012px;
+  margin: 0 auto;
+  padding: 0 16px 16px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.repo-path {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 18px;
+}
+
+.user-name {
+  color: #0969da;
+  cursor: pointer;
+}
+
+.slash {
+  color: #57606a;
+}
+
+.repo-name {
+  color: #0969da;
+}
+
+.badge-public {
+  font-size: 12px;
+  font-weight: bold;
+  color: #57606a;
+  border: 1px solid #d0d7de;
+  border-radius: 12px;
+  padding: 1px 8px;
+  margin-left: 4px;
+}
+
+.gh-btn {
+  background-color: #f6f8fa;
+  border: 1px solid #d0d7de;
+  border-radius: 6px;
+  padding: 5px 12px;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  color: #24292f;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.gh-btn:hover {
+  background-color: #eaeef2;
+}
+
+.gh-btn span {
+  background-color: #afb8c133;
+  padding: 2px 6px;
+  border-radius: 10px;
+  margin-left: 4px;
+}
+
+/* Abas */
+.gh-tabs {
+  max-width: 1012px;
+  margin: 0 auto;
+  padding: 0 16px;
+  display: flex;
+  gap: 16px;
+}
+
+.tab {
+  padding: 8px 12px;
+  font-size: 14px;
+  color: #24292f;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+}
+
+.tab.active {
+  font-weight: bold;
+  border-bottom-color: #fd8c73;
+}
+
+.counter {
+  background-color: #afb8c133;
+  border-radius: 10px;
+  padding: 1px 6px;
+  font-size: 12px;
+}
+
+/* Container Principal */
+.container {
+  max-width: 1012px;
+  margin: 24px auto;
+  padding: 0 16px;
+}
+
+/* Controles Superiores */
+.repo-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  gap: 12px;
+}
+
+.branch-badge {
+  background-color: #f6f8fa;
+  border: 1px solid #d0d7de;
+  padding: 5px 12px;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+#search-input {
+  padding: 6px 12px;
+  border: 1px solid #d0d7de;
+  border-radius: 6px;
+  background-color: #ffffff;
+  font-family: Arial, sans-serif;
+  width: 280px;
+  font-size: 13px;
+}
+
+#search-input:focus {
+  outline: 2px solid #0969da;
+  border-color: transparent;
+}
+
+/* Caixas Estilo GitHub */
+.gh-box {
+  background-color: #ffffff;
+  border: 1px solid #d0d7de;
+  border-radius: 6px;
+  margin-bottom: 24px;
+  overflow: hidden;
+}
+
+.gh-box-header {
+  background-color: #f6f8fa;
+  padding: 12px 16px;
+  border-bottom: 1px solid #d0d7de;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+}
+
+.commit-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.avatar {
+  background-color: #57606a;
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: bold;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.commit-msg, .commit-meta {
+  color: #57606a;
+}
+
+.commit-meta {
+  display: flex;
+  gap: 12px;
+}
+
+/* Árvore de Arquivos */
+.file-tree {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.file-tree tr {
+  border-bottom: 1px solid #d8dee4;
+}
+
+.file-tree tr:last-child {
+  border-bottom: none;
+}
+
+.file-tree tr:hover {
+  background-color: #f6f8fa;
+}
+
+.file-tree td {
+  padding: 8px 16px;
+  font-size: 13px;
+}
+
+.file-icon {
+  width: 30px;
+}
+
+.file-name {
+  font-weight: bold;
+  color: #24292f;
+  width: 180px;
+}
+
+.file-desc {
+  color: #57606a;
+}
+
+.file-time {
+  text-align: right;
+  color: #57606a;
+  width: 100px;
+}
+
+/* Área do README e Tabela de Dados */
+.readme-content {
+  padding: 24px 32px;
+}
+
+.readme-content h1 {
+  font-size: 24px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #d8dee4;
+  margin-bottom: 16px;
+}
+
+.readme-content h2 {
+  font-size: 18px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #d8dee4;
+  margin: 24px 0 16px 0;
+}
+
+.readme-content p {
+  margin-bottom: 16px;
+  color: #24292f;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 13px;
+}
+
+.data-table th,
+.data-table td {
+  padding: 10px 14px;
+  border: 1px solid #d0d7de;
+}
+
+.data-table th {
+  background-color: #f6f8fa;
+  font-weight: bold;
+  color: #24292f;
+}
+
+.data-table tr:nth-child(even) {
+  background-color: #f6f8fa;
+}
+
+/* Badges de Status na Tabela */
+.status-badge {
+  display: inline-block;
+  padding: 3px 8px;
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.status-ativo {
+  background-color: #dafbe1;
+  color: #1a7f37;
+  border: 1px solid #4ac26b66;
+}
+
+.status-concluido {
+  background-color: #ddf4ff;
+  color: #0969da;
+  border: 1px solid #54aeff66;
+}
