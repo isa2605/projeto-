@@ -1,1 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>estudos / materias-stem - Repositório</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+  <!-- Barra Superior Estilo GitHub -->
+  <header class="gh-header">
+    <div class="gh-header-content">
+      <div class="repo-path">
+        <svg height="16" viewBox="0 0 16 16" width="16" fill="#57606a">
+          <path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path>
+        </svg>
+        <span class="user-name">estudante-dev</span>
+        <span class="slash">/</span>
+        <strong class="repo-name">materias-stem</strong>
+        <span class="badge-public">Público</span>
+      </div>
+      <div class="repo-stats">
+        <button id="btn-star" class="gh-btn">★ Star <span id="star-count">12</span></button>
+      </div>
+    </div>
+
+    <!-- Abas do Repositório -->
+    <nav class="gh-tabs">
+      <div class="tab active">&lt;&gt; Código</div>
+      <div class="tab">Issues <span class="counter">4</span></div>
+      <div class="tab">Projetos</div>
+    </nav>
+  </header>
+
+  <!-- Conteúdo Principal -->
+  <main class="container">
+    
+    <!-- Barra de Branch e Filtro -->
+    <div class="repo-controls">
+      <div class="branch-badge">
+        <span>⎇ main</span>
+      </div>
+      <input type="text" id="search-input" placeholder="Filtrar matérias ou conteúdos..." />
+    </div>
+
+    <!-- Explorador de Arquivos (Estilo Tabela do GitHub) -->
+    <div class="gh-box">
+      <div class="gh-box-header">
+        <div class="commit-info">
+          <span class="avatar">ED</span>
+          <strong>estudante-dev</strong>
+          <span class="commit-msg">feat: adiciona tabela de ementa das disciplinas</span>
+        </div>
+        <div class="commit-meta">
+          <span>3 arquivos</span>
+          <span>Atualizado agora</span>
+        </div>
+      </div>
+
+      <table class="file-tree">
+        <tbody>
+          <tr>
+            <td class="file-icon">📄</td>
+            <td class="file-name">index.html</td>
+            <td class="file-desc">Estrutura principal e tabela de dados</td>
+            <td class="file-time">agora</td>
+          </tr>
+          <tr>
+            <td class="file-icon">🎨</td>
+            <td class="file-name">style.css</td>
+            <td class="file-desc">Estilização acinzentada padrão GitHub</td>
+            <td class="file-time">agora</td>
+          </tr>
+          <tr>
+            <td class="file-icon">⚡</td>
+            <td class="file-name">script.js</td>
+            <td class="file-desc">Filtro dinâmico e interatividade da tabela</td>
+            <td class="file-time">agora</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- README.md com a Tabela das Matérias -->
+    <article class="gh-box readme-box">
+      <div class="gh-box-header">
+        <strong>☰ README.md</strong>
+      </div>
+      <div class="readme-content">
+        <h1>Grade de Estudos: Ciências Exatas e Tecnologia</h1>
+        <p>Repositório dedicado à organização dos conteúdos, ferramentas e cargas horárias das disciplinas de <strong>Física</strong>, <strong>Tecnociência</strong>, <strong>Programação</strong> e <strong>Robótica</strong>.</p>
+
+        <h2>Dados das Matérias</h2>
+        <div class="table-wrapper">
+          <table class="data-table" id="materias-table">
+            <thead>
+              <tr>
+                <th>Matéria</th>
+                <th>Área / Foco</th>
+                <th>Principais Conteúdos</th>
+                <th>Ferramentas / Prática</th>
+                <th>Carga Horária</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody id="table-body">
+              <!-- Preenchido via JavaScript -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </article>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
